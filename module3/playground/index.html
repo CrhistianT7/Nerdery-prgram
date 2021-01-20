@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Clousure </title>
+    </head>
+    <body>
+        <script>
+            // function outer(){
+            //     const outerVar = 'Hey, I am the outer Var';
+            //     function inner(){
+            //         const innerVar = 'Hey, I am an inner Var';
+            //         console.log(innerVar);
+            //         console.log(outerVar);
+            //     }
+            //     return inner;
+            // }
+            // const innerFn = outer();
+            // innerFn();
+
+            // function createGreating(greeting = ''){
+            //     const myGreet = greeting.toUpperCase();
+            //     return function(name){
+            //         return `${myGreet} ${name}`;
+            //     }
+            // }
+
+            // const sayHello = createGreating('Hello');
+            // const sayHi = createGreating('Hey');
+            // console.log(sayHello('Crhis'));
+            // console.log(sayHi('Andrew'));
+
+            function createGame(gameName) {
+                let score = 0;
+                return function win(){
+                    score++;
+                    return `Your game ${gameName} score is ${score}`;
+                }
+            }
+
+            const soccerGame = createGame('Soccer');
+
+        </script>
+    </body>
+</html>
