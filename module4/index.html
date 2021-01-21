@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> The DOM </title>
+        <link rel="stylesheet" href="../base.css">
+    </head>
+    <body>
+        <p class='wes'> I am wes, I <em>love</em> bbq and <strong> make ws</strong></p>
+        <div class="items">
+            <div class="item">
+                <img src="https://picsum.photos/200">
+                <img src="https://picsum.photos/200">
+                <img src="https://picsum.photos/200">
+                <p>Hi I'm a item</p>
+            </div>
+            <img class="nice cool" src="https://picsum.photos/600">
+            <div class="item">
+                <h2> I'm a Heading</h2>
+                <p>Hi I'm an item</p>
+            </div>
+            <article>
+                <h2>I'm an article</h2>
+                <p class="pizza">This is honw many pizzas I ate! 1</p>
+            </article>
+        </div>
+        <style>
+            h2 span {
+                display: none;
+            }
+
+            img {
+                transition: all 0.2s;
+            }
+
+            .round {
+                border-radius: 50%;
+                transform: rotate(20deg);
+            }
+        </style>
+        <script src="./traversing.js"></script>
+    </body>
+</html>
