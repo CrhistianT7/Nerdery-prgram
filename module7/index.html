@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> If Statements </title>
+        <link rel="stylesheet" href="../base.css">
+    </head>
+    <body>
+        <script>
+            // if (10 > 2){
+            //     console.log('Yep');
+            // }
+
+            function slugify(sentence, lowercase) {
+                let slug = sentence.replace(/\s/g, '-');
+                if (lowercase) {
+                    return slug.toLowerCase();
+                }
+                return slug;
+            }
+
+             const name = 'wes';
+             if( name === "wes" || name === 'bos'){
+                 console.log('cool name');
+             }
+
+        </script>
+    </body>
+</html>

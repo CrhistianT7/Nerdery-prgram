@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>
+        Asycn Await
+  </title>
+  <link rel="stylesheet" href="../base.css">
+</head>
+
+<body>
+    <script>
+        function wait( ms = 0) {
+            return new Promise((resolve) => {
+                setTimeout(resolve, ms);
+            })
+        }
+
+        function makePizza(toppings = []){
+            return new Promise(function(resolve, reject){
+                if(toppings.includes('pineapple')){
+                    reject('Really? Get out of Here!!');
+                }
+                const amountOfTimeToBake = 500 + (toppings.length * 200);
+                // console.log(amountOfTimeToBake)
+                setTimeout(function(){
+                    resolve(`Here is your pizza Pitzi with the toppingds ${toppings.join(' ')}`);
+                },amountOfTimeToBake)
+            });
+        }
+
+        async function makeDinner() {
+            const pizza1 = await makePizza(['pepperoni']);
+            const pizza2 = await makePizza(['mushrooms']);
+            console.log(pizza1);
+            console.log(pizza2);
+        }
+
+        makeDinner();
+
+    </script>
+</body>
+
+</html>

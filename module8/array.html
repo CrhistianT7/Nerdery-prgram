@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Arrays </title>
+        <link rel="stylesheet" href="../base.css">
+    </head>
+    <body>
+        <script>
+            const names = ['Andrew', 'wes', 'scott'];
+
+            names.push('Lux');
+            console.log(names);
+            names.unshift('poppy');
+            console.log(names);
+            
+            // const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+            // console.log(numbers);
+            // numbers.splice(3, 2);
+            // console.log(numbers);
+
+            const comments = [
+                {text: 'comment 1', id: 1},
+                {text: 'comment 2', id: 2},
+                {text: 'comment 3', id: 3},
+                {text: 'comment 4', id: 4},
+                {text: 'comment 5', id: 5},
+            ];
+
+            function deleteComment(id, comments){
+                const commentIndex = comments.findIndex(Comment => comment.id === id);
+                return [
+                    ...comments.slice(0, commentIndex),
+                    ...comments.slice(commentIndex +1)
+                ];
+            }
+
+            // //numbers.reverse();
+            // const pizzaSlice = numbers.slice(2,4);
+            // console.log(pizzaSlice);
+
+        </script>
+    </body>
+</html>

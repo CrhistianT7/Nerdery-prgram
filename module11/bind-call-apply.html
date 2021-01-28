@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>
+        Bin Call 
+  </title>
+  <link rel="stylesheet" href="../base.css">
+</head>
+
+<body>
+    <p>Hey</p>
+    <button>Click Me</button>
+    <script>
+        const person = {
+            name: 'Andrew Turpo',
+            sayHi(){
+                console.log(`hey ${this.name}`);
+                return `hey ${this.name}`; 
+            },
+        }
+
+        const jenna = {name: 'jenna'};
+        const sayHi = person.sayHi.bind(jenna);
+
+        const $ = document.querySelector.bind(document);
+
+        
+
+    </script>
+</body>
+</html>

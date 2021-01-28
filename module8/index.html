@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Objetcs </title>
+        <link rel="stylesheet" href="../base.css">
+    </head>
+    <body>
+        <input type="text" name="first" value="andrew">
+
+        <script src="https://unpkg.com/lodash"></script>
+        <script>
+            // const age = 100;
+            // const person = {
+            //     age,
+            //     name: "Andrew",
+            //     '777': true,
+            //     clothing: {
+            //         shirts: 10,
+            //         pants: 2
+            //     },
+            //     sayHello: function(greeting = 'Hey'){
+            //         return `${greeting} ${this.name}`;
+            //     },
+            // };
+            // person.job = "webdev";
+            // person.age = 90;
+
+            // const input = document.querySelector('[name="first"]');
+            // const name = input ? input.value : '';
+            // console.log(name);
+            // delete person.age;
+            // console.log(person);
+            /** ---------------------- */
+            // let name1 = 'Andrew';
+            // let name3 = 'Andrew';
+
+            // const person1 = {
+            //     first: 'wes',
+            //     last: 'bos',
+            // };
+
+            // const person2 = {
+            //     first: 'wes',
+            //     last: 'bos',
+            // };
+
+            // const person3 = person1;
+            // person3.first = 'Larry';
+
+            // // const person4 = { ... person1};
+            // const person4 = _.cloneDeep(person1);
+            // person4.first = 'Andrew';
+            // console.log(person4);
+            // console.log(person1);
+            /** ---------------------- */
+
+            const meatInventory = {
+                bacon: 7,
+                sausage: 4,
+            }
+
+            const veggieInventory = {
+                lettuce: 5,
+                tomatoes: 3,
+            }
+            
+            const inventory = {...meatInventory, ...veggieInventory}
+            // console.log(inventory);
+
+            const name = 'andrew';
+
+            function doStuff(data){
+                data = 'something else';
+                console.log(data);
+            }
+
+            function doStuff2(data){
+                data.tomatoes = 100;
+                console.log(data);
+            }
+
+            doStuff(name);
+            console.log(name);
+            doStuff2(inventory);
+        </script>
+    </body>
+</html>
