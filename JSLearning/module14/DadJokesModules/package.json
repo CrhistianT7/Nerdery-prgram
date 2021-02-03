@@ -1,0 +1,20 @@
+{
+  "name": "dadjokes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jokes.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "broserslist": [
+    "last 1 chrome versions"]
+}
