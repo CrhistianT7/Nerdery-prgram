@@ -18,6 +18,10 @@ function add(num1: number, num2: number) {
   return num1 + num2;
 }
 
+function something(){
+  console.log('Hola Mundo')
+}
+
 button.addEventListener("click", function() {
   console.log(add(+input1.value, +input2.value));
 });
